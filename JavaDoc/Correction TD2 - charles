@@ -1,0 +1,40 @@
+TD2
+
+Exercice 1:
+1. 	42 méthode définit dans la classe mère
+	42 
+	24 
+	24
+	24 
+	24 classe définit dans la classe mère mais après la méthode appelle la méthode meth de la 		   classe fille.
+2. 2 méthodes | dans main: 1.
+3. Est-ce qu'il y a redéfinition pour une méthode static? non.
+   Method meth static:
+	42
+	42
+	24
+	42 print meth va appeler la méthode meth(statique) de la classe mère.
+	42 ça appelle la méthode meth de la mère (pas de polymorphisme pour les méthodes statiques).
+	42 
+4. S'il est définit dans la classe fille il utilise ce champs sinon il va dans la classe mère.
+   Même résultat que question 3.
+
+
+Exercice 2:
+
+1. méthode de la classe dans mère: 	public -> 	redéfinition de la classe fille on utilise 								protected ou private ou sans modificateur.
+					protected -> 	private ou protected
+					private -> 	private
+					sans modificateur -> sauf public??	
+
+   Si dans la méthode mère il y a une exception, dans la classe fille il faut une redéfinition de la  	 méthode: restriction plus forte (exceptionIO ou exceptionNullPointer,...).
+
+   Si dans la classe mère on a un retour de type primitif, la redéfinition a la même valeur de        	 retour. 
+
+   
+
+
+   RQ: Javadoc pour les fichiers txt avec les réponses.
+/** puis entrer.
+aller dans projet puis generate javadoc.
+
